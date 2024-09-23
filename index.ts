@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
-import app from "./server";
-import { MONGODB_URI, PORT } from "./configs";
+import app from "./src/server";
+import { MONGODB_URI, PORT } from "./src/configs";
 
 const conectMongo = async () => {
   try {
@@ -12,5 +12,5 @@ const conectMongo = async () => {
 };
 
 app.listen(PORT, async () => {
-  console.log(`Server is running on PORTss: ${PORT}`);
+  console.log(`Server is running on PORT: ${PORT}`);
 });
